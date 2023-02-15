@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    
+    $data = [
+        'saluto' => 'Hello vue' 
+    ];
+    return view('index', $data);
 });
